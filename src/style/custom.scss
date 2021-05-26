@@ -1,0 +1,13 @@
+body{
+  overflow-x: hidden;
+}
+.capitalize{
+  text-transform: capitalize;
+}
+.adaptiveSearchList { 
+  overflow-y: "scroll";
+  cursor: "pointer";
+}
+  @import "~bootstrap/scss/bootstrap.scss";
+
+  
