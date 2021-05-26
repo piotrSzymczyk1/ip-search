@@ -46,6 +46,7 @@ const SearchBox = ({ title, data, type }) => {
         {timeZoneData && Object.entries(timeZoneData).map(([key, value]) => <Card.Text key={`${value}${key}`}><b className="capitalize">{key.replaceAll("_", " ")}</b>: {value}</Card.Text>)}
         {currencyData && Object.entries(currencyData).map(([key, value]) => <Card.Text key={`${value}${key}`}><b className="capitalize">{key.replaceAll("_", " ")}</b>: {value}</Card.Text>)}
         {connectionData && Object.entries(connectionData).map(([key, value]) => <Card.Text key={`${value}${key}`}><b className="capitalize">{key.replaceAll("_", " ")}</b>: {value}</Card.Text>)}
+        {!ipData && <h6>No Data Available</h6>}
       </Card.Body>
     </Card>
     </div>

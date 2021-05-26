@@ -20,9 +20,9 @@ const [isInputValid, setIsInputValid] = useState(true)
 const handleInputChange = (event) => {
     console.log(event.target.value)
     setInputValue(event.target.value)
-    if(isIp(inputValue)){
+    if(isIp(event.target.value)){
         setIsInputValid(true)
-    }else if(isURL(inputValue)){
+    }else if(isURL(event.target.value)){
         setIsInputValid(true)
     }else if(!event.target.value){
         setIsInputValid(true)
